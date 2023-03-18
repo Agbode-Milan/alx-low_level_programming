@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - this prints the last digits of a randomly generated number
+ * main - This program prints the last digit of a randomly generated number.
  *
- * Return: ALways 0
+ * Return: Always 0
  */
 
 int main(void)
@@ -14,8 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-if ((n % 10) > 5)
+	if ((n % 10) > 5)
 {
 	printf("Last digit of %d id and %d is greater than 5\n", n, n % 10);
 }
@@ -27,7 +26,5 @@ else
 {
 	printf("Last digit of %d is %d and is 0\n", n, n % 10);
 }
-
 return (0);
-
 }
