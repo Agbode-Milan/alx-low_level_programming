@@ -3,7 +3,7 @@
 
 /**
  * create_array_range - creates an array of integers
- * @min: minimum value to include in the array
+ * @min: minimum range of values stored
  * @max: maximum range of values stored and number of elements
  *
  * Return: pointer to the new array
@@ -25,9 +25,7 @@ int *create_array_range(int min, int max)
 		return (NULL);
 
 	for (i = 0; min <= max; i++)
-	{
 		arr[i] = min++;
-	}
 
 	return (arr);
 }
