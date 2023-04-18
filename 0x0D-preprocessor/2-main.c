@@ -1,9 +1,14 @@
 #include <stdio.h>
 
+/**
+ * main - the name of the file is printed
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	char *filename = __FILE__;
-	printf("The name of the file is: %s\n", filename);
+	printf("%s\n", __FILE__);
 	return (0);
 }
 
