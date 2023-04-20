@@ -1,20 +1,25 @@
 #include "function_pointers.h"
-#include <stdio.h>
 
 /**
- * array_iterator - iterates over an array
+ * int_iterator - iterates over an array
  * @array: pointer to the array
  * @size: size of the array
- * @action: pointer to the function to perform on each element
+ * @cmp: pointer to func of one of the 3 in main
+ * Return:0
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
-{
-	unsigned int i;
 
-	if (array == NULL || action == NULL)
-		return;
+int int_index(int *array, int size, int (*cmp)(int))
+{
+	int i;
+
+	if (array == NULL || size <= 0 || cmp == NULL)
+		return (-1);
 
 	for (i = 0; i < size; i++)
-		action(array[i]);
+	{
+		if (cmp(array[i]))
+			return (i);
+	}
+	return (-1);
 }
 
