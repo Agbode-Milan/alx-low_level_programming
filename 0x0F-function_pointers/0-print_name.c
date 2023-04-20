@@ -5,7 +5,7 @@
  * print_name - prints a name using a function pointer
  * @name: pointer to the name to be printed
  * @f: pointer to the function that will print the name
- * Description: This function takes a name and a function pointer as parameters.
+ * Description: function takes a name and function pointer as parameters.
  **/
 
 
